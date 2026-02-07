@@ -6,24 +6,25 @@
     <meta propierty="og:image" content="">
     <!-- Здесь надо тег картинки в инете -->
     <meta name="generator" content="WordPress 6.9"> <!-- Тэг для поисковиков -->
-    <link rel="stylesheet" href="scc/style.css">
-     <title>Site</title>  
+    <link rel="stylesheet" href="css/style.css">
+     <title>Site</title> 
+     
 </head>
 
 <body>
    <header class="mainHeader">
     <!-- Шапка сайта   --> 
      <div class="header"> 
-        <a href="+375 11 111 11 11" class="header1Text"><div class="header1Text2"><img src="img/call.svg" alt=""></div>+375 (11) 111-11-11</a>
+        <a class="header1Text"><div class="header1Text2"><img src="img/call.svg" alt=""></div>+375 (11) 111-11-11</a>
         <a class="header1Text"> | </a>
-        <a href="anton.cheater053@gmail.com" class="header1Text"><div class="header1Text2"><img src="img/mail.svg" alt=""></div>anton.cheater053@gmail.com</a>
+        <a class="header1Text"><div class="header1Text2"><img src="img/mail.svg" alt=""></div>anton.cheater053@gmail.com</a>
         <a class="header1Text"> | </a>
         <a class="header1Text"><div class="header1Text2"><img src="img/location.svg" alt=""></div>г.Минск, Ул.Ленина,27; ТЦ Ленинград</a>
     </div>
     
     <div class="header2">
         <div class="header3">
-            <img class="logo" src="img/logo.jpg"  alt="logo">
+            <img class="logo" src="img/logo.svg"  alt="logo">
             <div><div class="name">ИП "Кузнецова"</div>
                  Профессиональные бухгалтерские услуги
             </div>
@@ -31,17 +32,17 @@
         
 
         <ul class="marker">
-            <li>Главная</li>
-            <li>Услуги</li>
-            <li>О компании</li>
-            <li>Контакты</li>
+            <li class="animated-link" id="toMain">Главная</li>
+            <li class="animated-link" id="uslugi">Услуги</li>
+            <li class="animated-link " id="toCompany">О компании</li>
+            <li class="animated-link" id="toMap">Карта</li>
             <li class="que">Задать вопрос</li>
         </ul>
     </div>
 </header>
 
     <main>
-        <div class="stoke1">
+        <div class="stoke1" id="main">
             <div>
                 <p class="stokeText" >Бухгалтерские услуги</p>
                 <p  class="stokeText2">Освободите время для развития бизнеса, доверив учет проффесионалам. Полный спектр услуг от ведения учета до налогового консультирования</p>
@@ -54,11 +55,11 @@
                 <li><p class="number">5000+</p><p>Довольных клиентов</p></li>
                 <li><p class="number">8+</p><p>Лет на рынке</p></li>
                 <li><p class="number">5</p><p>Профессионалов в команде</p></li>
-                <li><p class="number">90%</p><p>Успешных проектов</p></li>
+                <li><p class="number">99%</p><p>Успешных проектов</p></li>
             </ul>
         </div>
 
-        <div class="company">
+        <div class="company" id="uslugiSection">
             <p class="uslugi">Наши услуги</p>
             <p class="uslugi2">Предлагем полный спектр бухгалтерских услуг для вашего бизнеса</p>
         </div>
@@ -76,7 +77,7 @@
 
         <hr class="hrlast">
 
-        <div class="team">
+        <div class="team" id="aboutCompany">
             <p class="run">Почему выбирают нас</p>
             <p class="run2">Предоставление качественных бухгалтерских услуг</p>
             <ul class="run3">
@@ -87,9 +88,39 @@
             </ul>
         </div>
 
-        <div class="map-container">
-            <img class="map" src="img/logo.jpg" alt="">  
+        <div class="map-container" id="mapSection">
+           <div id="map" class="map"></div>
         </div>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=0a5a0d6b-b911-4dfc-8fbb-31bbe98bb219&lang=ru_RU"></script>
+        <script>
+        ymaps.ready(function() {
+            var myMap = new ymaps.Map('map', {
+                center: [53.888775, 27.580488],
+                zoom: 16
+            });
+
+            var myPlacemark = new ymaps.Placemark([53.888775, 27.580488], {
+                // Название, которое будет отображаться рядом с меткой
+                iconCaption: '📍 ИП "Кузнецова"',
+                
+                // Содержимое балуна (при клике)
+                balloonContentHeader: '📍 ИП "Кузнецова"    ',
+                balloonContentBody: 'Бухгалтерские услуги ',
+                balloonContentFooter: 'Координаты: 53.888775, 27.580488',
+                
+                // Подсказка при наведении
+                hintContent: 'Нажмите для просмотра'
+            }, {
+                
+                // Стиль подписи
+                iconCaptionMaxWidth: '200',
+                iconCaptionTextColor: '#000000',
+                iconCaptionTextSize: 12
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        });
+    </script>
         <hr>
 
     </main>
@@ -127,6 +158,7 @@
     <hr class="hrlast">
     <p class="footer4">©ИП "Кузнецова".  Все права защищены</p>
 </footer>
-
+<button id="toTopBtn" class="to-top-btn"></button>
+ <script src="js/script.js"></script>
 </body>
 </html>

@@ -133,6 +133,8 @@ body{
     color: whitesmoke;
     margin: 0 10px 0 0;
     padding: 0;
+    animation: fadeInRight 0.8s ease-out forwards;
+    opacity: 0;
 }
 
 .stokeText2{
@@ -142,7 +144,9 @@ body{
     color: whitesmoke;
     margin: 25px 10px 0 5px;
     padding: 0;
-    font-size: 27px ;
+    font-size: 27px;
+    animation: fadeInRight 0.8s ease-out forwards;
+    opacity: 0;
 }
 
 .foto{
@@ -151,6 +155,66 @@ body{
     border-radius: 20px;
     margin-top: 4%;
     margin-right: 1%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    animation: fadeInLeft 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.info ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 60px;    
+    margin-top: 15px; 
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+.info li{
+    display: flex;
+    flex-direction: column;  
+    align-items: center; 
+    flex: 1;      
+    gap: 5px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.096); 
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.info2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.icon-info {
+    display: flex !important; 
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    font-size: 40px !important;
+    line-height: 1 !important;
+    color: #155DFC;
+    background-color: #DBEAFE;
+    border-radius: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 7px;
+}
+
+.info li, .spisok4 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; 
+}
+
+.info li:hover, .spisok4:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .ach{
@@ -179,6 +243,8 @@ body{
     font-weight: 600;
     color: #155DFC;
     margin-bottom: 5px;
+     animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
 }
 
 
@@ -195,13 +261,14 @@ body{
 }
 
 .spisok2{
-   display: flex;      
-    flex-wrap: wrap;    
-    gap: 20px;          
+    display: grid;      
+     grid-template-columns: repeat(3, 1fr);  
+    row-gap: 10px;    
+    column-gap: 70px;          
     justify-content: space-between; 
     list-style: none;
     padding: 0;
-    margin: 20px 15px;
+    margin: 20px 35px;
     width: 100%;
     
 }
@@ -209,7 +276,9 @@ body{
 .spisok3{
     display: flex;
     text-align: center;
-  justify-content: center;
+    justify-content: center;
+    margin-left: 8px;
+    margin-bottom: 2px;
    
 }
 
@@ -217,22 +286,34 @@ body{
     background-color: white;
     border-radius: 10%;
     margin-top: 10px;
-    padding: 10px;
-    flex: 1 1 calc(33.333% - 20px); 
-    min-width: 300px;              
+    padding: 8px 0;
+    flex: 1 1 calc(33.333% - 20px);               
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.096); 
+    border-radius: 10px;
 }
 
 .spisok5{
-    width: 70px;
+    width: 60px;
     height: auto;
     background-color: #155DFC;
     border-radius: 10px;
     padding: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    margin-left: 12px;
+}
+
+.spisok6{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 8px;
+    margin-bottom: 8px;
 }
 
 
@@ -240,8 +321,11 @@ body{
     display: flex;
     justify-content: center;
     font-size: 65px;
+    font-weight: 600;
     margin-top: 10px;
     margin-bottom: 5px;
+    animation: fadeInLeft 0.8s ease-out forwards;
+    opacity: 0;
 }
 
 .uslugi2{
@@ -249,6 +333,8 @@ body{
     justify-content: center;
     font-size: 25px;
     padding: 5px;
+    animation: fadeInRight 0.8s ease-out forwards;
+    opacity: 0;
 }
 
 
@@ -269,32 +355,59 @@ body{
 }
 
 .run3{
+    flex: 1;              
+    display: flex;         
+    flex-direction: column;
+
     padding: 20px;
     list-style: none;
+    margin: 0;
 }
 
 .run4{
-  padding: 5px;
-  margin-left: 10px;
-  margin-bottom: 5px;
+    flex:1;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 .run5{
-    font-size: x-large;
+    font-size: xx-large;
+    font-weight: 500;
 }
 
 .run6{
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .run7{
-    width: 50px;
+    width: 55px;
     height: auto;
     background-color: #DBEAFE;
     border-radius: 10px;
     padding: 8px;
     margin-right: 15px;
+}
+
+.abUs{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.stoke{
+    width: 40%;           
+    max-height: auto;      
+    object-fit: cover;     
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
 }
 
 .team{

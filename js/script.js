@@ -92,3 +92,22 @@ toMain.addEventListener('click', function() {
         });
     }
 });
+
+
+const toInfo = document.getElementById('toInfo');
+
+toInfo.addEventListener('click', function() {
+    const targetElement = document.getElementById('info');
+    
+    if (targetElement) {
+
+        const headerHeight = document.querySelector('.mainHeader').offsetHeight;
+        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - headerHeight - 20;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
+});

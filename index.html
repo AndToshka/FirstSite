@@ -7,7 +7,8 @@
     <meta name="generator" content="WordPress 6.9"> 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fade.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100..700,0..1,-50..200" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/logo.svg" type="image/svg">
      <title>ИП "Кузнецова"</title> 
@@ -53,11 +54,11 @@
         </div>
 
         <div class="info" id="info">
-            <ul >
-                <li class="info3"><span class="material-symbols-outlined icon-info">call</span><div class="info2">Контакты</div><p>+375 (11) 111-11-11</p></li>
-                <li class="info3"><span class="material-symbols-outlined icon-info">mail</span><div class="info2">Email</div><p>anton.cheater053@gmail.com</p></li>
-                <li class="info3"><span class="material-symbols-outlined icon-info">location_on</span><div class="info2">Адрес</div> <p>г.Минск, Ул.Ленина,27; ТЦ Ленинград</p><p>ст.м.Пролетарская</p><p>Смоленская</p></li>
-                <li class="info3"><span class="material-symbols-outlined icon-info">schedule</span><div class="info2">Режим работы</div><p>Пн-Пт: 9:00-18:00</p> <p>Сб-Вс: выходной</p></li>
+            <ul>
+                <li><span class="material-symbols-outlined icon-info">call</span><div class="info2">Контакты</div><p>+375 (11) 111-11-11</p></li>
+                <li><span class="material-symbols-outlined icon-info">mail</span><div class="info2">Email</div><p>anton.cheater053@gmail.com</p></li>
+                <li><span class="material-symbols-outlined icon-info">location_on</span><div class="info2">Адрес</div> <p>г.Минск, Ул.Ленина,27; ТЦ Ленинград</p><div class="metro"><img class="metro2" src="img/Minsk_metro_logo.svg" alt=""><p>ст.м.Пролетарская</p></div><div class="busstop"><span class="material-symbols-outlined bus">directions_bus</span><p>Смоленская</p></div></li>
+                <li><span class="material-symbols-outlined icon-info">schedule</span><div class="info2">Режим работы</div><p>Пн-Пт: 9:00-18:00</p> <p>Сб-Вс: выходной</p></li>
             </ul>
         </div>
          <hr class="hrlast">
@@ -142,45 +143,18 @@
 
 <footer>
     <ul class="footer2">
-        <li>
-            <p class="footer5">ИП "Кузнецова"</p><p>Профессиональные услуги бухгалтеров</p>
-        </li>
-        <li>
-            <ul class="footer3"><p class="footer5">Быстрые ссылки</p>
-                <li>главная</li>
-                <li>услуги</li>
-                <li>о компанни</li>
-                <li>контакты</li>
-            </ul>
-        </li>
-        <li>
-           <ul class="footer3"><p class="footer5">наши услуги</p>
-               <li>бухгалтерское обслуживание</li>
-               <li>налоговое консультирование</li>
-               <li>кадровый учет</li>
-               <li>аудит и отчетность</li>
-               <li>регистрация бизнеса</li>
-           </ul> 
-        </li>
-        <li><ul class="footer3"><p class="footer5">контакты</p>
-               <li>Г.Минск,Ул.Ленина,27; ТЦ Ленинград</li>
-               <li>+375(11) 111-11-11</li>
-               <li>anton.cheater053@gmail.com</li>
-               <li>мы открыты для вас</li>
-        </ul>
-        </li>
+        <li><p class="footer5">ИП "Кузнецова"</p><p>Профессиональные услуги бухгалтеров</p>
+            <div class="creator"><p class="ft">Создатели сайта: </p><img class="github ft2" src="img/github.svg" alt="" ><img class="github" src="img/github.svg" alt=""></div></li>
+        <li><span class="material-symbols-outlined">call</span>+375 (11) 111-11-11</li>
+        <li><span class="material-symbols-outlined">mail</span>anton.cheater@gmail.com</li>
+        <li><span class="material-symbols-outlined">location_on</span>г.Минск, Ул.Ленина,27; ТЦ Ленинград</li>
     </ul>
+    <div><div><img class="metro2" src="img/Minsk_metro_logo.svg" alt=""><p>ст.м.Пролетарская</p></div><div></div><span class="material-symbols-outlined bus">directions_bus</span>Смоленская</div>
+   
     <hr class="hrlast">
     <p class="footer4">©ИП "Кузнецова".  Все права защищены</p>
 </footer>
 <button id="toTopBtn" class="to-top-btn"></button>
  <script src="js/script.js"></script>
- <script>
-document.querySelectorAll('.info3').forEach(card => {
-  card.addEventListener('animationend', () => {
-    card.classList.add('loaded');
-  });
-});
-</script>
 </body>
 </html>

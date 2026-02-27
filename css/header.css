@@ -37,6 +37,9 @@
 }
 
 @media (max-width:1200px){
+    .no768{
+        display: none;
+    }
 }
 
 @media (max-width: 1000px){

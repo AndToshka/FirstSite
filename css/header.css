@@ -83,6 +83,14 @@
         margin-top: 0;
 
     }
+
+    .mainHeader{
+    position: sticky;
+    top: 0;     
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 }
 
 @media (max-width: 480px){
@@ -109,6 +117,14 @@
         font-size: 3vw;
         margin-top: 0;
     }
+
+    .mainHeader{
+    position: sticky;
+    top: 0;     
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
 }
 
@@ -280,6 +296,7 @@
 
       .marker{
         margin-left: 2vw;
+        margin-right: 5vw;
         justify-content:space-between;
         width: 100%;
     }

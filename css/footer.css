@@ -1,0 +1,157 @@
+footer{
+    background-color: #101828;
+    color: white;
+    padding-top: 10px;
+}
+
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    list-style: none;
+    margin-left: 20px;
+    padding-bottom: 1%;
+    color: #87A1AF;
+}
+
+.footer3{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer3:last-child{
+    margin-right: 20px;
+}
+
+
+.footer4{
+     display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    padding-bottom: 1%;
+    color: #87A1AF;
+}
+
+.footer5{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.ftlocation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+}
+
+.creator{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.github{
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.github:hover{
+    transform: scale(1.15);
+}
+
+.ft{ margin-right: 5px;}
+.ft2{ margin-right: 10px;}
+
+.ft3{
+    color: #87A1AF;
+    margin-left: 7px;
+    position: relative;
+    top: -4px;
+    vertical-align: super;
+    font-size: 25px;
+}
+
+.ft4{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.ft5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.ft6{
+    color: #87A1AF;
+    font-size: x-large;
+    margin-left: 7px;
+    position: relative;
+    vertical-align: super;
+}
+
+.ft7{ font-size: 35px !important;}
+
+.busft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+
+.hrlast {
+    background-color:#9E9E9E; 
+    height: 1px;               
+    border: none; 
+    margin-left: 10px; 
+     margin-right: 10px;             
+}
+
+.to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.to-top-btn::before {
+    content: '↑';
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.to-top-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}

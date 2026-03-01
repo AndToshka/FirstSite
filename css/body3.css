@@ -78,3 +78,22 @@
 .team{
     background-color: #F9FAFB;
 }
+
+@media (max-width:1200px) {
+    
+}
+
+@media (max-width:1000px) {
+    
+}
+
+@media (max-width:876px) {
+    .run5{font-size: 5vw;}
+    .stoke{display: none;}
+}
+
+@media (max-width:480px) {
+    .run5{font-size: 5vw;}
+    .stoke{display: none;}
+
+}

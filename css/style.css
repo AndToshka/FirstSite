@@ -1,16 +1,42 @@
+
 html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    overflow-x: hidden;
 }
 
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-     font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    width: 100%;
+    overflow-x: clip; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img, video, svg, iframe, picture {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+[class*="flex"],
+[class*="Flex"] {
+    min-width: 0;
+}
+
+.mainHeader {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .map-container{

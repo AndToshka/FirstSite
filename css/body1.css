@@ -246,14 +246,6 @@
 }
 
 @media(max-width:1000px){
-    
-}
-
-@media(max-width:768px){
-    
-}
-
-@media (max-width: 480px) {
     .info ul {
         display: flex;
         flex-direction: column;  /* Выстраиваем li в колонку */
@@ -269,5 +261,76 @@
         flex-direction: column;
         align-items: flex-start; /* Или center, если нужно по центру */
         gap: 5px;                /* Отступ между иконкой и текстом */
+    }
+
+    .number {
+        font-size: 8.7vw; 
+    }
+
+    .number2{
+        font-size: 3vw;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:768px){
+      .info ul {
+        display: flex;
+        flex-direction: column;  /* Выстраиваем li в колонку */
+        list-style: none;     /* Убираем точки списка */
+        padding: 0;              /* Убираем стандартный отступ слева */
+        margin: 0;               /* Убираем стандартные отступы */
+        gap: 20px;  
+         width: 90%;
+        max-width: 90%;              /* Расстояние между элементами */
+    }
+    
+    /* Опционально: центрируем текст внутри li */
+    .info li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Или center, если нужно по центру */
+        gap: 5px;                /* Отступ между иконкой и текстом */
+    }
+
+    .number {
+        font-size: 8.7vw; 
+    }
+
+    .number2{
+        font-size: 3vw;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .info ul {
+        display: flex;
+        flex-direction: column;  
+        list-style: none;       
+        padding: 0;             
+        margin: 0;               
+        gap: 20px;  
+        width: 90%;
+        max-width: 90%;              
+    }
+    
+    .info li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        gap: 5px;             
+    }
+
+    .number {
+        font-size: 8.7vw; 
+    }
+
+    .number2{
+        font-size: 3vw;
+        justify-content: center;
+        align-items: center;
     }
 }
